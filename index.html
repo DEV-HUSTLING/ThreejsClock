@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/clock.js"></script>
+    <script type="text/javascript" src="/timer.js"></script>
+    <canvas class="webgl"></canvas>
+    <div class="timer">
+        <button onclick="timeVisible()">
+            <img width="50vw" src="/timer.webp"/>
+        </button>
+        <div id="timer_inp" class="timer_inp">
+            <input class="th"
+            onchange="numberh(event)" 
+            placeholder="hh" type="number" />
+            <p>:</p>
+            <input class="tm" 
+            onchange="numberm(event)" 
+            placeholder="mm" type="number"/>
+            <p>:</p>
+            <input class="ts" 
+            onchange="numbers(event)" 
+            placeholder="ss" type="number"/>
+            <button  class="setbtn" onclick="startCountdown()">
+                set
+            </button>
+        </div>
+    </div>
+    <div class="clock">
+        <div class="hours">
+            <div class="hour1"></div>
+            <div class="hour2"></div>
+        </div>
+        <div class="dot">:</div>
+        <div class="min">
+            <div class="minute1"></div>
+            <div class="minute2"></div>
+        </div>
+        <div class="dot">:</div>
+        <div class="secs">
+            <div class="sec1"></div>
+            <div class="sec2"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
