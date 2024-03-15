@@ -1,15 +1,4 @@
-function timeVisible() {
-    var timerInput = document.getElementById("timer_inp");
-    var currentVisibility = window.getComputedStyle(timerInput).visibility;
-    if (currentVisibility === "visible") {
-        timerInput.style.visibility = "hidden";
-    } else {
-        timerInput.style.visibility = "visible";
-    }
-}
-function number(){
-    
-}
+
 function numberh(event){
     if(event.target.value > 12){
         alert("keep it below 12")
